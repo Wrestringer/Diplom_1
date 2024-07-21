@@ -25,21 +25,21 @@ public class BurgerTests extends BaseTest {
 
 
     @Test
-    public void setBunTest() {
+    public void setBunBurgerTest() {
         Burger burger = new Burger();
         burger.setBuns(bun);
         Assert.assertEquals(bun, burger.bun);
     }
 
     @Test
-    public void addIngredientTest() {
+    public void addIngredientBurgerTest() {
         Burger burger = new Burger();
         burger.addIngredient(ingredient1);
         Assert.assertEquals(ingredient1, burger.ingredients.get(0));
     }
 
     @Test
-    public void removeIngredientTest() {
+    public void removeIngredientBurgerTest() {
         Burger burger = new Burger();
         burger.addIngredient(ingredient1);
         burger.removeIngredient(0);
@@ -47,7 +47,7 @@ public class BurgerTests extends BaseTest {
     }
 
     @Test
-    public void moveIngredientTest() {
+    public void moveIngredientBurgerTest() {
         Burger burger = new Burger();
         burger.addIngredient(ingredient2);
         burger.addIngredient(ingredient1);
@@ -58,7 +58,7 @@ public class BurgerTests extends BaseTest {
 
 
     @Test
-    public void getPriceTest() {
+    public void getPriceBurgerTest() {
         //Создание стабов
         Mockito.when(bun.getPrice()).thenReturn(PRICE_OF_BUN);
         Mockito.when(ingredient1.getPrice()).thenReturn(PRICE_OF_INGREDIENT1);
@@ -81,7 +81,7 @@ public class BurgerTests extends BaseTest {
     }
 
     @Test
-    public void getReceiptTest() {
+    public void getReceiptBurgerTest() {
         //Наполнение булочки данными
         Mockito.when(bun.getName()).thenReturn(NAME_OF_BUN);
         Mockito.when(bun.getPrice()).thenReturn(PRICE_OF_BUN);
