@@ -2,11 +2,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import praktikum.Bun;
 
+import static praktikum.constants.Names.NAME_OF_BUN;
+import static praktikum.constants.Prices.PRICE_OF_BUN;
+
 public class BunTests extends BaseTest {
-
-    public static final String NAME_OF_BUN = "Имя булочки1";
-    public static final float PRICE_OF_BUN = 1.09f;
-
 
 
     @Test
